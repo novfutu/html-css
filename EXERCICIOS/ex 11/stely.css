@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient( to right,#58FCE7,#57F887 );
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin: 0px;
+    
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(19, 177, 124);
+    text-align: center;
+    height: 20px;
+    font-style: oblique;
+    margin: 0px;
+ 
+  
+}
+
+h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+}

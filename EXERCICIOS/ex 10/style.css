@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+    background-image:linear-gradient( to right, #4F0BDE,#160CE8,#0BA8DE) ;
+}
+
+#Principal{
+    text-align: center;
+    color: white;
+    background-color: #FFD719;
+}
+
+.Determinada{
+    color: black;
+    text-align: center;
+    background-color: #FFD719;
+}
+
+.Paragrafo{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+
+}
+
+div > p {
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+div:hover > p {
+    display: block;
+    background-color: blue;
+    color: white;
+    width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder ;
+}
+
+div:hover{
+    color: blue;
+}

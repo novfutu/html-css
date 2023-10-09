@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(To right,#331352,#52009E,#2A0052 );
+    font-family: 'Inter', sans-serif;
+   font-weight: bold;
+   
+}
+section{
+    /*Box shadow serve para criar uma "caixa" com sobra o primeiro px e espalhado para o lado o segundo px e para baixo e o terceiro px e a grossura da sombra */
+    box-shadow: 10px 10px 10px #49434f ;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    width: 900px;
+    text-align: center;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+
+div :hover{
+    color:#52009E
+    
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    color: #2A0052;
+}
+
+a{
+   text-decoration: none;
+}
+a :hover{
+    text-decoration: underline;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
