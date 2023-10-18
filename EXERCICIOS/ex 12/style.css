@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(imagens/wallpaper002.jpg);
+}
+
+div.quadrado {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+div#d1{
+    background-image: url(imagens/pattern001.png);
+}
+
+div#d2{
+    background-image: url(imagens/pattern002.png);
+}
+
+div#d3{
+    background-image: url(imagens/pattern003.png);
+}
