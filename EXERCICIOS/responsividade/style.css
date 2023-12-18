@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscle;
+}
+
+:root{
+    font-family: 'Hedvig Letters Serif', serif;
+    font-family: 'Kalnia', serif;
+    font-family: 'Lora', serif;
+    font-size: 62.5%;
+    
+}
+
+
+main{
+    max-width: 32rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2{
+    font-size: 3.0rem;
+    margin-top: 2.0rem;
+    margin-bottom: 2.5rem;
+    color: #51C1F5;
+}
+
+
+img{
+    margin-bottom: 3.0rem;
+}
+
+p{
+    font-size: 1.9rem;
+    color: #F50069;
+    margin-bottom: 2.0rem;
+    font-weight: 600;
+}
+
+
+strong{
+    font-size: 2.0rem;
+    color: #51C1F5;
+}
+
+ul, ol{
+    font-size: 1.7rem;
+    color: #F50069;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
+}
+
+li{
+    margin-left: 3.0rem;
+    margin-top: .5rem;
+    font-weight: 600;
+    
+}
+
+@media (min-width: 1120px) {
+    main {
+      flex-direction: row;
+      max-width: 100%;
+      gap: 16rem;
+      margin-inline: auto;
+    }
+  
+    .conteudo {
+      max-width: 43.5rem;
+      margin-left: 9.0rem;
+    
+    }
+  
+    .ingredientes {
+      max-width: 52.5rem;
+    }
+  
+  }

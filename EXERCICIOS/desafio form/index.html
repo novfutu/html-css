@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie seu Formulario </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lora:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>
+        Crie e compartilhe seus eventos!
+    </h1>
+    <p>
+        Site feito para você que quer fazer eventos,  podendo compartilhar as dats e horas e tendo ate senha para pessoas não autorizadas
+    </p>
+  </header>
+
+  <form action="lading.html">
+    <fieldset>
+        <legend>Informações do evento</legend>
+        <div id="form">
+            <label for="url">Coloque aqui a url do evento</label>
+            <input type="text" name="url" id="url" required>
+        </div>
+        <div id="form">
+            <label for="link">Link do envento (começe com HTTPS )</label>
+            <input type="text" name="link" id="link" required>
+        </div>
+        <div id="form">
+            <label for="telefone">Whatsapp para contato (somente números)</label>
+            <input type="number" name="telefone" id="telefone" required>
+        </div>
+        <div id="form">
+            <label for="areaText">Informações extras</label>
+            <textarea name="areaText" id="areaTex" cols="30" rows="10"></textarea>
+        </div>
+        <div id="form">
+            <label for="selecionar">Categoria</label>
+            <select name="selecionar" id="selecionar">
+                  <option value="Live">Live</option>
+                  <option value="Podcast">Podcast</option>
+                  <option value="Bate-Papo">Bate-Papo</option>
+                  <option value="Aulas">Aulas</option>
+
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div id="campoPrivace">
+            <legend>Privacidade</legend>
+            <div id="form">
+                <label for="email">Coloque o e-mail do administrador</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div id="form">
+                <label for="senha">Coloque  a senha de acesso</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div id="date">
+            <legend> Dia e Hora</legend>
+        </div>
+          <div id="horarios">
+              
+              <div id="form">
+                  <label for="data"> Data</label>
+                  <input type="date" name="data" id="data" required>
+              </div>
+              <div id="form">
+                  <label for="hora">Das</label>
+                  <input type="time" name="hora" id="hora" required>
+              </div>
+              <div id="form">
+                  <label for="ate">Até</label>
+                  <input type="time" name="ate" id="ate" required>
+              </div>
+            
+          </div>
+     
+    </fieldset>
+
+    <footer>
+    <div >
+            <label for="enviar"></label>
+            <input class="botão"  type="submit" value="Criar Projeto">
+        </div>
+    </footer>
+
+  </form>
+    
+</body>
+</html>

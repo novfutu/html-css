@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+:root{
+    font-size: 62.5%;
+    --cor-base1: #202024;
+    --cor-base2: #323238;
+    --cor-base3: #8D8D99;
+    --cor-base4: #d0d0d0;
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    font-size: 1.6rem;
+    
+}
+
+
+#galery{
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+
+main{
+    background-color: var(--cor-base4);
+    overflow-y: scroll;
+    display: grid;
+    justify-content: center;
+    
+}
+
+ header, nav, nav ul{
+    padding: 1.0rem;
+    align-items: center;
+    display: flex;
+    gap: 7.2rem;
+    font-weight: 700;
+}
+
+nav ul{
+    list-style: none;
+}
+
+header form {
+    flex: 1;
+}
+
+li{
+    color: var(--cor-base3);
+}
+
+label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+input{
+    width: 100%;
+    height: 5.0rem;
+    border: none;
+    background-color: var(--cor-base4);
+    padding-left: 2.0rem ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'PT Serif', serif;
+    border-radius: 8px;
+}
+
+
+input::placeholder{
+    opacity: 0.56;
+
+}
+
+.nomeGalery{
+    color: var(--cor-base1);
+}
+
+
+.avatar{
+    height: 5.0rem;
+    width: 5.0rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 3.0rem;
+}
+
+
+footer{
+    text-align: center;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    font-weight: 600;
+}
+
+
+figure{
+    box-shadow: 5px 5px 20px rgba(128, 0, 128, 0.715);
+    border-radius: 1.0rem;
+    width: 39.0rem;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  
+}
+
+.conteiner{
+    margin-top: 2.0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 390px);
+    gap: 2.5rem 3.0rem;
+    margin-bottom: 3.0rem;
+    
+}
+
+.descrição{
+    background-color: var(--cor-base3);
+    width: 40px;
+    display: block;
+    border-radius:2.0rem ;
+    height: 2.5rem;
+}
+
+
+
+span, h2{
+    
+    font-weight: 700;
+    margin: 2.3rem;
+}
+
+span{
+    text-align: center;
+}
+
+
+.itens:hover{
+ filter: contrast(110%) saturate(150%);
+ transform: scale(1.1)  ;
+ transition: all .3s ease-out;
+}
+
+header, footer{
+    animation: move 1s;
+}
+
+
+.itens{
+    --deley: .8s;
+    animation: aparição .3s  var(--deley) backwards;
+}
+
+@keyframes move {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(0.0);
+    }
+}
+
+
+@keyframes aparição {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    50%{
+        transform: scale(0.5);
+    }
+}

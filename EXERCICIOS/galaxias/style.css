@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    background-color: #1E1E1E;
+    color: #C4C4CC;
+    
+}
+
+
+h1, h2{
+    color: #02799D;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    width: 100%;
+    gap: 48px 60px;
+    
+}
+
+
+
+p, h2{
+    padding: 15px 20px 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#galaxies{
+    border: solid 2px #323238;
+    gap: 16px 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 20px 7px 5px #02799d47;
+}
